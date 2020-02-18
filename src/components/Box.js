@@ -5,16 +5,21 @@ class Box extends Component {
         super(props)
     
         this.state = {
-             
+            // box: {
+            //     backgroundColor: '',
+            //     width : '',
+            //     height: ''
+            // }
         }
     }
-    
+
     render() {
         return (
-            <div style={{'backgroundColor: blue', width: '20em', height: '12em'}}>
+            <div style={{backgroundColor: this.props.backgroundColor, width: this.props.width + 'em', height: this.props.height + 'em'}}>
+                <button>X</button>
             </div>
         )
     }
 }
 
-fault Box
+export default Box
